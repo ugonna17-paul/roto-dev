@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/17a4dc049a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Portfolio</title>
+</head>
+
+
+<body>
+
+
+    <nav class="navbar" data-aos="fade-down">
+        <div class="brand">Roto<span>Dev</span></div>
+
+        <!-- Hamburger -->
+        <div class="hamburger" id="hamburger">
+            <i class="fa-solid fa-bars" id="open"></i>
+            <!-- <i class="fa-solid fa-xmark" id="close"></i> -->
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links" id="navLinks">
+            <li><a class="links" href="#">Home</a></li>
+            <li><a class="links" href="#skills">Skills</a></li>
+            <li><a class="links" href="#about">About</a></li>
+            <li><a class="links" href="#project">Projects</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Hero -->
+    <div class="hero" id="home">
+        <div class="hero-text" data-aos="zoom-in">
+            <h2>FULL-Stack <br><span class="dev">Developer</span></h2>
+            <p data-aos="fade-up" data-aos-delay="200">
+                I’m a Full-Stack Developer passionate about crafting modern, scalable web
+                applications. <br><br>
+                I design and build solutions that combine sleek front-end experiences with
+                powerful back-end systems.
+            </p>
+            <button onclick="window.location.href='mailto:ugonnaaninwodo@gmail.com'" data-aos="flip-up"
+                data-aos-delay="400">
+                Let’s Connect
+            </button>
+
+        </div>
+        <div class="hero-image" data-aos="fade-left" data-aos-delay="100">
+            <img src="Ugonna.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- About Me -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="image-card" data-aos="zoom-in-up" data-aos-duration="1200">
+                <img src="Ugonna_Aninwodo_Ultra-detailed_anime_portrait_of_a_young_developer_wearing_a_dark_92d83d8f-5a79-42cb-8fc0-9ace2920baa6.png"
+                    alt="Full-stack developer illustration">
+                <div class="image-badge">Frontend • Backend</div>
+            </div>
+
+            <div class="about-text" data-aos="fade-left">
+                <h2>About Me</h2>
+                <h3>Hi, I'm <span>Ugonna Aninwodo</span></h3>
+                <p>
+                    I’m a dedicated <span>Full-Stack Developer</span> with a passion for
+                    building modern, scalable, and impactful web applications.
+                    I specialize in both frontend and backend development — bringing
+                    together sleek designs, responsive interfaces, and robust
+                    backend systems.
+                    <br><br>
+                    Over the years, I’ve worked on projects that merge creativity
+                    with technology — from dynamic websites and dashboards to
+                    full-scale web applications. My goal is to create solutions
+                    that are not just functional but also meaningful and user-friendly.
+                    <br><br>
+                    When I’m not coding, I enjoy exploring emerging tech, refining my
+                    problem-solving skills, and contributing to innovative projects.
+                </p>
+                <button onclick="window.location.href = 'Aninwodo_Ugonna_Paul_CV (1).pdf'" data-aos="zoom-in">Download CV</button>
+            </div>
+        </div>
+    </section>
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills-tabs">
+            <button class="tab-btn active" data-tab="frontend">Frontend</button>
+            <button class="tab-btn" data-tab="backend">Backend</button>
+        </div>
+
+        <!-- Frontend Skills -->
+        <div class="skills-container active" id="frontend">
+            <div class="skill-card" data-aos="flip-left" data-aos-delay="200">
+                <i class="fa-brands fa-html5"></i>
+                <h3>HTML</h3>
+                <p>Semantic & accessible structures</p>
+            </div>
+            <div class="skill-card" data-aos="flip-left" data-aos-delay="100">
+                <i class="fa-brands fa-css3-alt"></i>
+                <h3>CSS</h3>
+                <p>Responsive layouts & animations</p>
+            </div>
+            <div class="skill-card" data-aos="flip-left" data-aos-delay="400">
+                <i class="fa-brands fa-js"></i>
+                <h3>JavaScript</h3>
+                <p>Dynamic & interactive UIs</p>
+            </div>
+            <div class="skill-card" data-aos="flip-left" data-aos-delay="500">
+                <i class="fa-brands fa-react"></i>
+                <h3>React</h3>
+                <p>Modern front-end framework</p>
+            </div>
+        </div>
+
+        <!-- Backend Skills -->
+        <div class="skills-container" id="backend">
+            <div class="skill-card" data-aos="flip-left" data-aos-delay="100">
+                <i class="fa-brands fa-node-js"></i>
+                <h3>Node.js</h3>
+                <p>Server-side JavaScript runtime</p>
+            </div>
+
+            <div class="skill-card" data-aos="flip-left" data-aos-delay="200">
+                <i class="fa-solid fa-route"></i>
+                <h3>Express.js</h3>
+                <p>REST APIs & backend frameworks</p>
+            </div>
+
+            <div class="skill-card" data-aos="flip-left" data-aos-delay="300">
+                <i class="fa-solid fa-database"></i>
+                <h3>MongoDB</h3>
+                <p>NoSQL database management</p>
+            </div>
+
+            <div class="skill-card" data-aos="flip-left" data-aos-delay="400">
+                <i class="fa-solid fa-fire"></i>
+                <h3>Firebase</h3>
+                <p>Auth, Firestore, hosting & cloud functions</p>
+            </div>
+
+            <div class="skill-card" data-aos="flip-left" data-aos-delay="500">
+                <i class="fa-solid fa-plug"></i>
+                <h3>API Development</h3>
+                <p>RESTful APIs & integrations</p>
+            </div>
+
+            <div class="skill-card" data-aos="flip-left" data-aos-delay="600">
+                <i class="fa-brands fa-git-alt"></i>
+                <h3>Git</h3>
+                <p>Version control & collaboration</p>
+            </div>
+
+            <div class="skill-card" data-aos="flip-left" data-aos-delay="700">
+                <i class="fa-brands fa-figma"></i>
+                <h3>Figma</h3>
+                <p>Design-to-dev workflow & API usage</p>
+            </div>
+        </div>
+
+    </section>
+    <section class="education" id="education">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-down">Education</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                My academic journey & certifications
+            </p>
+
+            <div class="edu-timeline">
+                <!-- SQI College of ICT -->
+                <div class="edu-item" data-aos="fade-right" data-aos-delay="200">
+                    <img src="https://edu.sqi.ng/wp-content/uploads/2025/05/SQI_8351.jpg" alt="SQI College of ICT"
+                        class="edu-logo" />
+                    <div class="edu-content" data-aos="flip-left" data-aos-delay="400">
+                        <h3>SQI College of ICT</h3>
+                        <p>
+                            <strong>National Diploma</strong> in Software Engineering / Fullstack Web Development
+                        </p>
+                        <span class="edu-years">2024 – 2025 (1 Year)</span>
+                        <p class="edu-desc">
+                            Completed a 1-year intensive program covering frontend, backend, and software engineering
+                            principles. Specialized in modern web technologies including HTML, CSS, JavaScript, React,
+                            Node.js, and MongoDB.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Additional Certificate -->
+                <div class="edu-item" data-aos="fade-right" data-aos-delay="200">
+                    <img src="https://edu.sqi.ng/wp-content/uploads/2023/06/college.jpg" alt="Web Development"
+                        class="edu-logo" />
+                    <div class="edu-content" data-aos="flip-left" data-aos-delay="400">
+                        <h3>Independent Projects & Certifications</h3>
+                        <p><strong>Fullstack Development</strong></p>
+                        <span class="edu-years">2024 – Present</span>
+                        <p class="edu-desc">
+                            Worked on multiple real-world projects such as a real estate dashboard, airtime recharge
+                            app,
+                            and portfolio websites to strengthen both frontend and backend development skills.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="projects" id="project">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <p class="section-subtitle">Some of the work I’ve built & contributed to</p>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-aos="flip-left" data-aos-delay="200">
+                    <img src="./Screenshot 2025-12-01 145859.png" alt="Project 1">
+                    <div class="project-content">
+                        <h3>Real Estate Site</h3>
+                        <p>A property management platform with listing control, user roles, and booking system.</p>
+                        <button><a href="https://real-estate-ec94d.web.app">View Live Demo</a></button>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-aos="flip-right" data-aos-delay="100">
+                    <img src="./aim.png" alt="Project 2">
+                    <div class="project-content">
+                        <h3>Fashion E-commerce Site</h3>
+                        <p>A modern fashion website showcasing products with responsive design and smooth navigation,
+                            built with HTML, CSS, and JavaScript.</p>
+                        <button><a href="https://aim-aparrel.web.app/">View Live Demo</a></button>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-aos="flip-left" data-aos-delay="400">
+                    <img src="./port.png" alt="Project 3">
+                    <div class="project-content">
+                        <h3>Portfolio Website</h3>
+                        <p>Personal portfolio showcasing skills, projects, and education with animations & effects.</p>
+                        <button><a href="https://port-work2.surge.sh/">View Live Demo</a></button>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card" data-aos="flip-right" data-aos-delay="500">
+                    <img src="./Screenshot 2025-12-01 150225.png" alt="Project 4">
+                    <div class="project-content">
+                        <h3>A Store Page</h3>
+                        <p>A Store Page where you can view products that is offered by the store.</p>
+                        <button><a href="https://sunflower-essentials.surge.sh/">View Live Demo</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View All Button -->
+            <!-- <div class="view-all-container" data-aos="fade-up" data-aos-delay="600">
+                <a href="#all-projects" class="view-all-btn">View All Projects</a>
+            </div> -->
+        </div>
+    </section>
+
+    <section class="experience" id="experience">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <p class="section-subtitle">Projects & Collaborations I’ve worked on</p>
+
+            <div class="exp-timeline">
+
+                <!-- Real Estate Dashboard -->
+                <div class="exp-item" data-aos="fade-right" data-aos-delay="200">
+                    <img src="./aim.png" alt="Fashion Designer & Tailor Site" class="exp-logo">
+                    <div class="exp-content">
+                        <h3>Fashion Designer & Tailor Platform</h3>
+                        <p><strong>Role:</strong> Frontend Developer</p>
+                        <span class="exp-years">2025</span>
+                        <p class="exp-desc">
+                            Developed a stylish platform where users can explore fashion styles, customize
+                            their preferences, and book tailoring services online. Focused on delivering
+                            a sleek user interface with smooth booking flow to connect designers with clients.
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <div class="exp-item" data-aos="fade-right" data-aos-delay="200">
+                    <img src="./Screenshot 2025-12-01 152758.png" alt="Neststacx Website" class="exp-logo">
+                    <div class="exp-content">
+                        <h3>Neststacx Website</h3>
+                        <p><strong>Role:</strong> Frontend & Backend Developer</p>
+                        <span class="exp-years">2025</span>
+                        <p class="exp-desc">
+                            Developed the frontend and backend for Neststacx, an IT consulting and web solutions
+                            platform.
+                            Built a responsive, modern website that showcases services while enabling users to send
+                            reviews
+                            and messages directly to the admin. Collaborated with designers to ensure smooth navigation
+                            and a clean UI for an engaging user experience.
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <!-- Freelance Portfolio Projects -->
+                <div class="exp-item" data-aos="fade-right" data-aos-delay="200">
+                    <img src="./Screenshot 2025-12-01 153026.png" alt="Poet Inspiration Site" class="exp-logo">
+                    <div class="exp-content">
+                        <h3>Poet Inspiration Platform</h3>
+                        <p><strong>Role:</strong> Frontend Developer</p>
+                        <span class="exp-years">2025</span>
+                        <p class="exp-desc">
+                            Built a platform for poets to receive daily inspiration, explore powerful quotes,
+                            and contribute their own creations. The site focused on simplicity, creativity,
+                            and a community-driven experience to encourage writers to express themselves.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="exp-item" data-aos="fade-right" data-aos-delay="200">
+                    <img src="./trade-signal-preview.png" alt="Trade Signal Landing Page" class="exp-logo">
+                    <div class="exp-content">
+                        <h3>Trade Signal Landing Page</h3>
+                        <p><strong>Role:</strong> Frontend Developer</p>
+                        <span class="exp-years">2025</span>
+                        <p class="exp-desc">
+                            Built a modern, high-conversion landing page for a trading signal service.
+                            The page displays real-time or regularly updated trading signals and includes a clear
+                            call-to-action
+                            that routes users directly to the Telegram channel for premium signals.
+                            Designed with a clean UI, fast performance, and mobile responsiveness to ensure smooth user
+                            experience
+                            and maximum engagement.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="150">
+                Let’s work together or just say hello 👋
+            </p>
+
+            <!-- Contact Form -->
+            <div class="contact-side">
+                <form class="contact-form" action="https://formspree.io/f/meolzlwk" method="POST" data-aos="fade-left"
+                    data-aos-delay="100">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+
+
+
+                <div class="contact-cards">
+                    <div class="contact-area" data-aos="fade-right" data-aos-delay="100">
+                        <h4 class="contact-area-h4">Contact Information</h4>
+                        <div class="contact-info">
+                            <h4>Email</h4>
+                            <p>ugonnaaninwodo@gmail.com</p>
+                        </div>
+
+                        <div class="contact-info">
+                            <h4>Phone</h4>
+                            <p>+234 707 232 6934</p>
+                        </div>
+
+                        <div class="contact-info">
+                            <h4>Location</h4>
+                            <p>Nigeria</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-link" data-aos="fade-up" data-aos-delay="100">
+                        <h4 class="contact-area-h4">Connect</h4>
+                        <div class="links">
+                            <a href="">
+                                <span>Discord</span>
+                                <span>steven.tech</span>
+                            </a>
+                            <a href="" class="tiktok" style="display: flex; gap: 30px; overflow: auto;">
+                                <span>TikTok</span>
+                                <span style="word-wrap: break-word; overflow-wrap: break-word; white-space: normal;">https://www.tiktok.com/@mr.roto6</span>
+                            </a>
+                            <a href="">
+                                <span>Twitter</span>
+                                <span>@RotoTechHub</span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="social-links" data-aos="fade-up" data-aos-delay="450">
+                <a href="mailto:ugonnaaninwodo@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Brand -->
+            <h2 class="brand" data-aos="fade-up">Ugonna Aninwodo</h2>
+            <p class="tagline" data-aos="fade-up" data-aos-delay="100">
+                Web Developer | Frontend Enthusiast
+            </p>
+
+            <!-- Links -->
+            <ul class="footer-links" data-aos="fade-up" data-aos-delay="200">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <!-- Social Icons -->
+            <div class="social-icons" data-aos="zoom-in" data-aos-delay="100">
+                <a href="https://github.com/ugonna17-paul"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+
+            <!-- Copyright -->
+            <p class="copyright" data-aos="fade-up" data-aos-delay="400">
+                © 2025 Ugonna Aninwodo. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
+<script>
+    AOS.init({
+        duration: 1200,  // smooth animation speed
+        once: true       // animates only once
+    });
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    // Toggle active class on click
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+
+    // Optional: close nav when a link is clicked (mobile)
+    document.querySelectorAll('.nav-links li a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+        });
+    });
+    // JavaScript for Changing Text
+    const tabBtns = document.querySelectorAll(".tab-btn");
+    const tabContents = document.querySelectorAll(".skills-container");
+
+    tabBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+            tabBtns.forEach(b => b.classList.remove("active"));
+            btn.classList.add("active");
+
+            tabContents.forEach(tab => {
+                tab.classList.remove("active");
+            });
+            document.getElementById(btn.dataset.tab).classList.add("active");
+        });
+    });
+
+
+
+
+</script>
