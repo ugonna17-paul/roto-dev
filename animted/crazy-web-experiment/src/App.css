@@ -1,0 +1,98 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.landing-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #000;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  pointer-events: none;
+  z-index: 10;
+  background: rgba(0, 0, 20, 0.35);
+  /* subtle tint */
+}
+
+.title {
+  font-size: 5rem;
+  font-weight: 900;
+  margin: 0;
+  text-shadow: 0 0 30px #00ffff, 0 0 60px #0000ff;
+  animation: glow 4s infinite alternate;
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  margin: 1rem 0 2rem;
+  opacity: 0.9;
+  max-width: 700px;
+}
+
+.cta-buttons {
+  pointer-events: all;
+}
+
+.btn {
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 50px;
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.primary {
+  background: linear-gradient(45deg, #00ffff, #0088ff);
+  color: black;
+  box-shadow: 0 0 20px #00ffff;
+}
+
+.secondary {
+  background: transparent;
+  border: 2px solid #00ffff;
+  color: #00ffff;
+}
+
+.primary:hover,
+.secondary:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 40px #00ffff;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 20px #00ffff;
+  }
+
+  to {
+    text-shadow: 0 0 60px #00ffff, 0 0 100px #0000ff;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .title {
+    font-size: 3.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.4rem;
+  }
+}
