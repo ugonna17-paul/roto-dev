@@ -327,7 +327,8 @@ body {
 }
 
 /* Button */
-.about-text button {
+.about-text button,
+.about-text a.cv-download-btn {
     padding: 12px 25px;
     background: #00ff7f;
     color: #0b0c10;
@@ -338,9 +339,12 @@ body {
     cursor: pointer;
     box-shadow: 0 0 15px rgba(0, 255, 127, 0.6);
     transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
 }
 
-.about-text button:hover {
+.about-text button:hover,
+.about-text a.cv-download-btn:hover {
     background: #00ffcc;
     transform: translateY(-3px);
     /* box-shadow: 0 0 30px rgba(0, 255, 127, 0.8); */
@@ -681,7 +685,8 @@ body {
     color: #cccccc;
 }
 
-.project-content button {
+.project-content a.project-demo-btn {
+    display: inline-block;
     padding: 10px 20px;
     background: #00ff7f;
     color: #0b0c10;
@@ -692,17 +697,13 @@ body {
     cursor: pointer;
     box-shadow: 0 0 15px rgba(0, 255, 127, 0.6);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
 }
 
-.project-content button:hover {
+.project-content a.project-demo-btn:hover {
     transform: translateY(-3px);
     /* box-shadow: 0 0 25px rgba(0, 255, 127, 0.9); */
     background: #00ffcc;
-}
-
-.project-content button a {
-    text-decoration: none;
-    color: #0b0c10;
 }
 
 .project-card:hover {
