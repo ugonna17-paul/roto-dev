@@ -5,21 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/17a4dc049a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Portfolio</title>
 </head>
 
 
 <body>
 
-
-    <nav class="navbar" data-aos="fade-down">
+    <nav class="navbar">
         <div class="brand">Roto<span>Dev</span></div>
 
         <!-- Hamburger -->
@@ -30,550 +28,766 @@
 
         <!-- Navigation Links -->
         <ul class="nav-links" id="navLinks">
-            <li><a class="links" href="#">Home</a></li>
+            <li><a class="links" href="#home">Home</a></li>
             <li><a class="links" href="#skills">Skills</a></li>
             <li><a class="links" href="#about">About</a></li>
+            <li><a class="links" href="#automation">Automation</a></li>
             <li><a class="links" href="#project">Projects</a></li>
         </ul>
     </nav>
 
 
     <!-- Hero -->
-    <div class="hero" id="home">
-        <div class="hero-text" data-aos="zoom-in">
-            <h2>FULL-Stack <br><span class="dev">Developer</span></h2>
-            <p data-aos="fade-up" data-aos-delay="200">
-                I’m a Full-Stack Developer passionate about crafting modern, scalable web
-                applications. <br><br>
-                I design and build solutions that combine sleek front-end experiences with
-                powerful back-end systems.
-            </p>
-            <button onclick="window.location.href='mailto:ugonnaaninwodo@gmail.com'" data-aos="flip-up"
-                data-aos-delay="400">
-                Let’s Connect
-            </button>
-
+    <section class="hero" id="home">
+        <div class="section-shape section-shape--hero" aria-hidden="true"></div>
+        <div class="hero-inner container">
+            <div class="hero-text" data-aos="fade-up">
+                <span class="eyebrow">Ugonna Aninwodo · Developer & Automation</span>
+                <h1>FULL-Stack <br><span class="dev">Developer</span></h1>
+                <p>
+                    I build responsive websites, scalable web apps, and automated business systems.
+                    From React and Node.js to CRM workflows and marketing funnels, I help businesses
+                    capture leads, streamline operations, and deliver better customer experiences.
+                </p>
+                <div class="hero-actions">
+                    <button type="button" id="connectBtn" aria-haspopup="dialog" aria-controls="connectModal">Let’s Connect</button>
+                    <a href="#project" class="btn-outline">View Work</a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-up" data-aos-delay="120">
+                <div class="hero-ring" aria-hidden="true"></div>
+                <img src="UgonnaPaul.png" alt="Ugonna Aninwodo - Full-Stack Developer">
+            </div>
         </div>
-        <div class="hero-image" data-aos="fade-left" data-aos-delay="100">
-            <img src="ChatGPT Image Mar 26, 2026, 10_30_57 AM.png" alt="Ugonna Aninwodo - Full-Stack Developer">
-        </div>
-    </div>
+    </section>
 
     <!-- About Me -->
     <section class="about" id="about">
-        <div class="about-container">
-            <div class="image-card" data-aos="zoom-in-up" data-aos-duration="1200">
-                <img src="Ugonna_Aninwodo_Ultra-detailed_anime_portrait_of_a_young_developer_wearing_a_dark_92d83d8f-5a79-42cb-8fc0-9ace2920baa6.png"
-                    alt="Full-stack developer illustration">
-                <div class="image-badge">Frontend • Backend</div>
+        <div class="section-shape section-shape--about" aria-hidden="true"></div>
+        <div class="about-container container">
+            <div class="about-visual" data-aos="fade-up">
+                <div class="about-photo-wrap">
+                    <img src="Ugonna_Aninwodo_Ultra-detailed_anime_portrait_of_a_young_developer_wearing_a_dark_92d83d8f-5a79-42cb-8fc0-9ace2920baa6.png"
+                        alt="Ugonna Aninwodo">
+                </div>
+                <ul class="about-stats">
+                    <li><strong>2+</strong><span>Years building</span></li>
+                    <li><strong>5+</strong><span>Projects shipped</span></li>
+                    <li><strong>CRM</strong><span>Marketing automation</span></li>
+                </ul>
             </div>
 
-            <div class="about-text" data-aos="fade-left">
-                <h2>About Me</h2>
-                <h3>Hi, I'm <span>Ugonna Aninwodo</span></h3>
+            <div class="about-text" data-aos="fade-up" data-aos-delay="100">
+                <div class="section-head section-head--left" data-aos="fade-up">
+                    <span class="eyebrow">About</span>
+                    <h2>Hi, I'm <span>Ugonna Aninwodo</span></h2>
+                </div>
                 <p>
-                    I’m a dedicated <span>Full-Stack Developer</span> with a passion for
-                    building modern, scalable, and impactful web applications.
-                    I specialize in both frontend and backend development — bringing
-                    together sleek designs, responsive interfaces, and robust
-                    backend systems.
-                    <br><br>
-                    Over the years, I’ve worked on projects that merge creativity
-                    with technology — from dynamic websites and dashboards to
-                    full-scale web applications. My goal is to create solutions
-                    that are not just functional but also meaningful and user-friendly.
-                    <br><br>
-                    When I’m not coding, I enjoy exploring emerging tech, refining my
-                    problem-solving skills, and contributing to innovative projects.
+                    I’m a dedicated <span>Full-Stack Developer</span> and
+                    <span>CRM & Marketing Automation Specialist</span>, building modern web
+                    applications and automated systems that help businesses grow.
                 </p>
-                <a href="Aninwodo_Ugonna_Paul_CV.pdf" target="_blank" rel="noopener noreferrer" class="cv-download-btn" data-aos="zoom-in">Download
-                    CV</a>
+                <p>
+                    From dynamic websites and dashboards to GoHighLevel funnels, workflows, and
+                    integrations, I create solutions that are functional, streamlined, and
+                    built for real business results.
+                </p>
+                <a href="Aninwodo_Ugonna_Paul_CV.pdf" target="_blank" rel="noopener noreferrer" class="cv-download-btn">Download CV</a>
             </div>
         </div>
     </section>
+
+    <!-- CRM & Marketing Automation -->
+    <section class="automation" id="automation">
+        <div class="section-shape section-shape--automation" aria-hidden="true"></div>
+        <div class="container">
+            <div class="section-head" data-aos="fade-up">
+                <span class="eyebrow">Business Systems</span>
+                <h2>CRM & Marketing Automation Specialist</h2>
+            </div>
+
+            <div class="automation-block" data-aos="fade-up">
+                <p class="automation-lead">
+                    I work with <strong>Pacetas</strong>, building responsive websites, landing pages, webinar funnels,
+                    and automated business systems with <strong>GoHighLevel</strong>. My work includes CRM setup, forms,
+                    calendars, workflows, lead management, email automation, contact segmentation, and third-party
+                    integrations. I combine web development with automation to help businesses capture leads, improve
+                    follow-up, streamline operations, and create better customer experiences.
+                </p>
+
+                <div class="automation-tools">
+                    <span class="company-badge">Pacetas</span>
+                    <span class="tool-badge">GoHighLevel</span>
+                </div>
+
+                <ul class="automation-services">
+                    <li><i class="fa-solid fa-globe"></i> Responsive websites & landing pages</li>
+                    <li><i class="fa-solid fa-video"></i> Webinar funnels</li>
+                    <li><i class="fa-solid fa-users-gear"></i> CRM setup & lead management</li>
+                    <li><i class="fa-solid fa-calendar-check"></i> Forms & calendars</li>
+                    <li><i class="fa-solid fa-diagram-project"></i> Workflows & automation</li>
+                    <li><i class="fa-solid fa-envelope-open-text"></i> Email automation</li>
+                    <li><i class="fa-solid fa-filter"></i> Contact segmentation</li>
+                    <li><i class="fa-solid fa-link"></i> Third-party integrations</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
     <!-- SKILLS -->
     <section class="skills" id="skills">
-        <h2>My Skills</h2>
+        <div class="section-shape section-shape--skills" aria-hidden="true"></div>
+        <div class="container">
+            <div class="section-head" data-aos="fade-up">
+                <span class="eyebrow">Expertise</span>
+                <h2>My Skills</h2>
+            </div>
 
-        <div class="skills-tabs">
-            <button class="tab-btn active" data-tab="frontend">Frontend</button>
-            <button class="tab-btn" data-tab="backend">Backend</button>
+            <div class="skills-tabs">
+                <button class="tab-btn active" data-tab="frontend">Frontend</button>
+                <button class="tab-btn" data-tab="backend">Backend</button>
+                <button class="tab-btn" data-tab="automation">Automation</button>
+            </div>
+
+            <!-- Frontend Skills -->
+            <div class="skills-container active" id="frontend">
+                <div class="skill-card" data-aos="fade-up">
+                    <i class="fa-brands fa-html5"></i>
+                    <h3>HTML</h3>
+                    <p>Semantic & accessible structures</p>
+                </div>
+                <div class="skill-card" data-aos="fade-up">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h3>CSS</h3>
+                    <p>Responsive layouts & animations</p>
+                </div>
+                <div class="skill-card" data-aos="fade-up">
+                    <i class="fa-brands fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <p>Dynamic & interactive UIs</p>
+                </div>
+                <div class="skill-card" data-aos="fade-up">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>TypeScript</h3>
+                    <p>Typed JavaScript for safer, scalable apps</p>
+                </div>
+                <div class="skill-card" data-aos="fade-up">
+                    <i class="fa-brands fa-react"></i>
+                    <h3>React</h3>
+                    <p>Modern front-end framework</p>
+                </div>
+                <div class="skill-card" data-aos="fade-up">
+                    <i class="fa-solid fa-forward"></i>
+                    <h3>Next.js</h3>
+                    <p>React framework with SSR & optimized performance</p>
+                </div>
+                <div class="skill-card" data-aos="fade-up">
+                    <i class="fa-brands fa-figma"></i>
+                    <h3>Figma</h3>
+                    <p>Design-to-dev workflow & UI collaboration</p>
+                </div>
+            </div>
+
+            <!-- Backend Skills -->
+            <div class="skills-container" id="backend">
+                <div class="skill-card" data-aos="fade-up">
+                    <i class="fa-brands fa-node-js"></i>
+                    <h3>Node.js</h3>
+                    <p>Server-side JavaScript runtime</p>
+                </div>
+                <div class="skill-card" data-aos="fade-up">
+                    <i class="fa-solid fa-route"></i>
+                    <h3>Express.js</h3>
+                    <p>REST APIs & backend frameworks</p>
+                </div>
+                <div class="skill-card" data-aos="fade-up">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>MongoDB</h3>
+                    <p>NoSQL database management</p>
+                </div>
+                <div class="skill-card" data-aos="fade-up">
+                    <i class="fa-solid fa-fire"></i>
+                    <h3>Firebase</h3>
+                    <p>Auth, Firestore, hosting & cloud functions</p>
+                </div>
+                <div class="skill-card" data-aos="fade-up">
+                    <i class="fa-solid fa-plug"></i>
+                    <h3>API Development</h3>
+                    <p>RESTful APIs & integrations</p>
+                </div>
+                <div class="skill-card" data-aos="fade-up">
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <h3>GraphQL</h3>
+                    <p>Modern API query language & data fetching</p>
+                </div>
+                <div class="skill-card" data-aos="fade-up">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h3>Nodemailer</h3>
+                    <p>Email delivery & transactional messaging</p>
+                </div>
+                <div class="skill-card" data-aos="fade-up">
+                    <i class="fa-solid fa-bolt"></i>
+                    <h3>Socket.io</h3>
+                    <p>Real-time bidirectional event communication</p>
+                </div>
+                <div class="skill-card" data-aos="fade-up">
+                    <i class="fa-brands fa-docker"></i>
+                    <h3>Docker</h3>
+                    <p>Containerized apps & deployment workflows</p>
+                </div>
+                <div class="skill-card" data-aos="fade-up">
+                    <i class="fa-brands fa-git-alt"></i>
+                    <h3>Git</h3>
+                    <p>Version control & collaboration</p>
+                </div>
+            </div>
+
+            <!-- Automation Skills -->
+            <div class="skills-container" id="automation">
+                <div class="skill-card" data-aos="fade-up">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h3>GoHighLevel</h3>
+                    <p>CRM, funnels, workflows & client systems</p>
+                </div>
+                <div class="skill-card" data-aos="fade-up">
+                    <i class="fa-solid fa-building"></i>
+                    <h3>Pacetas</h3>
+                    <p>Company I work with for CRM & automation projects</p>
+                </div>
+                <div class="skill-card" data-aos="fade-up">
+                    <i class="fa-solid fa-users-gear"></i>
+                    <h3>CRM Setup</h3>
+                    <p>Pipelines, contacts & lead management</p>
+                </div>
+                <div class="skill-card" data-aos="fade-up">
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                    <h3>Email Automation</h3>
+                    <p>Campaigns, sequences & follow-up flows</p>
+                </div>
+                <div class="skill-card" data-aos="fade-up">
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <h3>Workflows</h3>
+                    <p>Triggers, actions & business automation</p>
+                </div>
+                <div class="skill-card" data-aos="fade-up">
+                    <i class="fa-solid fa-file-lines"></i>
+                    <h3>Forms & Calendars</h3>
+                    <p>Lead capture & appointment booking</p>
+                </div>
+                <div class="skill-card" data-aos="fade-up">
+                    <i class="fa-solid fa-video"></i>
+                    <h3>Webinar Funnels</h3>
+                    <p>Registration, reminders & conversion flows</p>
+                </div>
+                <div class="skill-card" data-aos="fade-up">
+                    <i class="fa-solid fa-link"></i>
+                    <h3>Integrations</h3>
+                    <p>Third-party tools & API connections</p>
+                </div>
+            </div>
         </div>
-
-        <!-- Frontend Skills -->
-        <div class="skills-container active" id="frontend">
-            <div class="skill-card" data-aos="flip-left" data-aos-delay="200">
-                <i class="fa-brands fa-html5"></i>
-                <h3>HTML</h3>
-                <p>Semantic & accessible structures</p>
-            </div>
-            <div class="skill-card" data-aos="flip-left" data-aos-delay="100">
-                <i class="fa-brands fa-css3-alt"></i>
-                <h3>CSS</h3>
-                <p>Responsive layouts & animations</p>
-            </div>
-            <div class="skill-card" data-aos="flip-left" data-aos-delay="400">
-                <i class="fa-brands fa-js"></i>
-                <h3>JavaScript</h3>
-                <p>Dynamic & interactive UIs</p>
-            </div>
-            <div class="skill-card" data-aos="flip-left" data-aos-delay="500">
-                <i class="fa-brands fa-react"></i>
-                <h3>React</h3>
-                <p>Modern front-end framework</p>
-            </div>
-            <div class="skill-card" data-aos="flip-left" data-aos-delay="600">
-                <i class="fa-solid fa-forward"></i>
-                <h3>Next.js</h3>
-                <p>React framework with SSR & optimized performance</p>
-            </div>
-        </div>
-
-        <!-- Backend Skills -->
-        <div class="skills-container" id="backend">
-            <div class="skill-card" data-aos="flip-left" data-aos-delay="100">
-                <i class="fa-brands fa-node-js"></i>
-                <h3>Node.js</h3>
-                <p>Server-side JavaScript runtime</p>
-            </div>
-
-            <div class="skill-card" data-aos="flip-left" data-aos-delay="200">
-                <i class="fa-solid fa-route"></i>
-                <h3>Express.js</h3>
-                <p>REST APIs & backend frameworks</p>
-            </div>
-
-            <div class="skill-card" data-aos="flip-left" data-aos-delay="300">
-                <i class="fa-solid fa-database"></i>
-                <h3>MongoDB</h3>
-                <p>NoSQL database management</p>
-            </div>
-
-            <div class="skill-card" data-aos="flip-left" data-aos-delay="400">
-                <i class="fa-solid fa-fire"></i>
-                <h3>Firebase</h3>
-                <p>Auth, Firestore, hosting & cloud functions</p>
-            </div>
-
-            <div class="skill-card" data-aos="flip-left" data-aos-delay="500">
-                <i class="fa-solid fa-plug"></i>
-                <h3>API Development</h3>
-                <p>RESTful APIs & integrations</p>
-            </div>
-
-            <div class="skill-card" data-aos="flip-left" data-aos-delay="600">
-                <i class="fa-brands fa-git-alt"></i>
-                <h3>Git</h3>
-                <p>Version control & collaboration</p>
-            </div>
-
-            <div class="skill-card" data-aos="flip-left" data-aos-delay="700">
-                <i class="fa-brands fa-figma"></i>
-                <h3>Figma</h3>
-                <p>Design-to-dev workflow & API usage</p>
-            </div>
-            <div class="skill-card" data-aos="flip-left" data-aos-delay="800">
-                <i class="fa-solid fa-diagram-project"></i>
-                <h3>GraphQL</h3>
-                <p>Modern API query language & data fetching</p>
-            </div>
-
-        </div>
-
     </section>
     <section class="education" id="education">
+        <div class="section-shape section-shape--education" aria-hidden="true"></div>
         <div class="container">
-            <h2 class="section-title" data-aos="fade-down">Education</h2>
-            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
-                My academic journey & certifications
-            </p>
+            <div class="section-head" data-aos="fade-up">
+                <span class="eyebrow">Background</span>
+                <h2 class="section-title">Education</h2>
+                <p class="section-subtitle">My academic journey & certifications</p>
+            </div>
 
-            <div class="edu-timeline">
-                <!-- SQI College of ICT -->
-                <div class="edu-item" data-aos="fade-right" data-aos-delay="200">
-                    <img src="https://edu.sqi.ng/wp-content/uploads/2025/05/SQI_8351.jpg" alt="SQI College of ICT"
-                        class="edu-logo" />
-                    <div class="edu-content" data-aos="flip-left" data-aos-delay="400">
-                        <h3>SQI College of ICT</h3>
-                        <p>
-                            <strong>National Diploma</strong> in Software Engineering / Fullstack Web Development
-                        </p>
-                        <span class="edu-years">2024 – 2025 (1 Year)</span>
-                        <p class="edu-desc">
-                            Completed a 1-year intensive program covering frontend, backend, and software engineering
-                            principles. Specialized in modern web technologies including HTML, CSS, JavaScript, React,
-                            Node.js, and MongoDB.
-                        </p>
+            <div class="edu-track">
+                <article class="edu-step" data-aos="fade-up">
+                    <div class="edu-side">
+                        <span class="edu-year">2024 – 2025</span>
                     </div>
-                </div>
+                    <div class="edu-line-col" aria-hidden="true">
+                        <span class="edu-dot"></span>
+                    </div>
+                    <div class="edu-body">
+                        <img src="https://edu.sqi.ng/wp-content/uploads/2025/05/SQI_8351.jpg" alt="SQI College of ICT" class="edu-logo" />
+                        <div class="edu-content">
+                            <h3>SQI College of ICT</h3>
+                            <p><strong>National Diploma</strong> in Software Engineering / Fullstack Web Development</p>
+                            <p class="edu-desc">Completed a 1-year intensive program covering frontend, backend, and software engineering principles. Specialized in HTML, CSS, JavaScript, React, Node.js, and MongoDB.</p>
+                        </div>
+                    </div>
+                </article>
 
-                <!-- Additional Certificate -->
-                <div class="edu-item" data-aos="fade-right" data-aos-delay="200">
-                    <img src="https://edu.sqi.ng/wp-content/uploads/2023/06/college.jpg" alt="Web Development"
-                        class="edu-logo" />
-                    <div class="edu-content" data-aos="flip-left" data-aos-delay="400">
-                        <h3>Independent Projects & Certifications</h3>
-                        <p><strong>Fullstack Development</strong></p>
-                        <span class="edu-years">2024 – Present</span>
-                        <p class="edu-desc">
-                            Worked on multiple real-world projects such as a real estate dashboard, airtime recharge
-                            app,
-                            and portfolio websites to strengthen both frontend and backend development skills.
-                        </p>
+                <article class="edu-step" data-aos="fade-up">
+                    <div class="edu-side">
+                        <span class="edu-year">2024 – Present</span>
                     </div>
-                </div>
+                    <div class="edu-line-col" aria-hidden="true">
+                        <span class="edu-dot"></span>
+                    </div>
+                    <div class="edu-body">
+                        <img src="https://edu.sqi.ng/wp-content/uploads/2023/06/college.jpg" alt="Web Development" class="edu-logo" />
+                        <div class="edu-content">
+                            <h3>Independent Projects & Certifications</h3>
+                            <p><strong>Fullstack Development</strong></p>
+                            <p class="edu-desc">Worked on real-world projects including a real estate dashboard, airtime recharge app, and portfolio websites to strengthen frontend and backend skills.</p>
+                        </div>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
 
 
     <section class="projects" id="project">
+        <div class="section-shape section-shape--projects" aria-hidden="true"></div>
         <div class="container">
-            <h2 class="section-title">My Projects</h2>
-            <p class="section-subtitle">Some of the work I’ve built & contributed to</p>
-
-            <div class="projects-grid">
-
-
-                <!-- Project 1 -->
-                <div class="project-card" data-aos="flip-left" data-aos-delay="200">
-                    <img src="./Screenshot 2025-12-01 145859.png" alt="Project 1">
-                    <div class="project-content">
-                        <h3>Real Estate Site</h3>
-                        <p>A property management platform with listing control, user roles, and booking system.</p>
-                        <a href="https://real-estate-ec94d.web.app" target="_blank" rel="noopener noreferrer" class="project-demo-btn">View Live Demo</a>
-                    </div>
-                </div>
-                <div class="project-card" data-aos="flip-left" data-aos-delay="600">
-                    <img src="velociti-dashboard.png" alt="Velociti Multi-Vendor Delivery Platform">
-
-                    <div class="project-content">
-                        <h3>Velociti - Multi-Vendor Delivery Platform</h3>
-
-                        <p>
-                            Full-stack logistics and delivery platform with role-based authentication, real-time order
-                            tracking,
-                            vendor dashboards, rider management, analytics, smart delivery workflows, and secure payment
-                            integration.
-                            Built to support customers, vendors, riders, and administrators within one scalable
-                            ecosystem.
-                        </p>
-
-                        <a href="https://velociti-sandy.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-demo-btn">View Live Demo</a>
-                    </div>
-                </div>
-
-
-
-                <!-- Project 3 -->
-                <div class="project-card" data-aos="flip-left" data-aos-delay="400">
-                    <img src="./port.png" alt="Project 3">
-                    <div class="project-content">
-                        <h3>Portfolio Website</h3>
-                        <p>Personal portfolio showcasing skills, projects, and education with animations & effects.</p>
-                        <a href="https://port-work2.surge.sh/" target="_blank" rel="noopener noreferrer" class="project-demo-btn">View Live Demo</a>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="project-card" data-aos="flip-right" data-aos-delay="500">
-                    <img src="./Screenshot 2025-12-01 150225.png" alt="Project 4">
-                    <div class="project-content">
-                        <h3>A Store Page</h3>
-                        <p>A Store Page where you can view products that is offered by the store.</p>
-                        <a href="https://sunflower-essentials.surge.sh/" target="_blank" rel="noopener noreferrer" class="project-demo-btn">View Live Demo</a>
-                    </div>
-                </div>
-
-                <!-- Project 5 - DevNest -->
-                <div class="project-card" data-aos="flip-left" data-aos-delay="600">
-                    <img src="Screenshot 2026-04-22 123252.png" alt="DevNest E-Learning Platform">
-                    <div class="project-content">
-                        <h3>DevNest - E-Learning Platform</h3>
-                        <p>Full-stack LMS with secure authentication, Paystack payment integration, subscription-based
-                            content locking, and learner progress tracking. Built with React, Node.js, Express, and
-                            MongoDB.</p>
-                        <a href="https://devnest-cyan.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-demo-btn">View Live Demo</a>
-                    </div>
-                </div>
-                <!-- Project 2 -->
-                <div class="project-card" data-aos="flip-right" data-aos-delay="100">
-                    <img src="./aim.png" alt="Project 2">
-                    <div class="project-content">
-                        <h3>Fashion E-commerce Site</h3>
-                        <p>A modern fashion website showcasing products with responsive design and smooth navigation,
-                            built with HTML, CSS, and JavaScript.</p>
-                        <a href="https://aim-aparrel.web.app/" target="_blank" rel="noopener noreferrer" class="project-demo-btn">View Live Demo</a>
-                    </div>
-                </div>
+            <div class="section-head" data-aos="fade-up">
+                <span class="eyebrow">Selected Work</span>
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-subtitle">Some of the work I’ve built & contributed to</p>
             </div>
 
-        </div>
+            <div class="project-showcase">
+                <article class="project-row project-row--featured" data-aos="fade-up">
+                    <div class="project-media">
+                        <img src="velociti-dashboard.png" alt="Velociti Multi-Vendor Delivery Platform">
+                    </div>
+                    <div class="project-copy">
+                        <span class="project-tag">Featured · Full-Stack</span>
+                        <h3>Velociti, Multi-Vendor Delivery Platform</h3>
+                        <p>Full-stack logistics platform with role-based auth, real-time order tracking, vendor dashboards, rider management, analytics, and secure payments, built for customers, vendors, riders, and admins.</p>
+                        <a href="https://velociti-sandy.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-demo-btn">View Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </article>
 
-        <!-- View All Button -->
-        <!-- <div class="view-all-container" data-aos="fade-up" data-aos-delay="600">
-                <a href="#all-projects" class="view-all-btn">View All Projects</a>
-            </div> -->
+                <article class="project-row" data-aos="fade-up">
+                    <div class="project-media">
+                        <img src="Screenshot 2026-04-22 123252.png" alt="DevNest E-Learning Platform">
+                    </div>
+                    <div class="project-copy">
+                        <span class="project-tag">Full-Stack · LMS</span>
+                        <h3>DevNest, E-Learning Platform</h3>
+                        <p>Secure authentication, Paystack payments, subscription-gated content, and learner progress tracking. React, Node.js, Express, MongoDB.</p>
+                        <a href="https://devnest-cyan.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-demo-btn">View Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </article>
+
+                <article class="project-row project-row--reverse" data-aos="fade-up">
+                    <div class="project-media">
+                        <img src="./Screenshot 2025-12-01 145859.png" alt="Real Estate Site">
+                    </div>
+                    <div class="project-copy">
+                        <span class="project-tag">Web App</span>
+                        <h3>Real Estate Site</h3>
+                        <p>Property management platform with listing control, user roles, and booking system.</p>
+                        <a href="https://real-estate-ec94d.web.app" target="_blank" rel="noopener noreferrer" class="project-demo-btn">View Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </article>
+
+                <article class="project-row" data-aos="fade-up">
+                    <div class="project-media">
+                        <img src="./aim.png" alt="Fashion E-commerce Site">
+                    </div>
+                    <div class="project-copy">
+                        <span class="project-tag">Frontend</span>
+                        <h3>Fashion E-commerce Site</h3>
+                        <p>Modern fashion storefront with responsive design and smooth navigation, HTML, CSS, JavaScript.</p>
+                        <a href="https://aim-aparrel.web.app/" target="_blank" rel="noopener noreferrer" class="project-demo-btn">View Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </article>
+
+                <article class="project-row project-row--reverse" data-aos="fade-up">
+                    <div class="project-media">
+                        <img src="./port.png" alt="Portfolio Website">
+                    </div>
+                    <div class="project-copy">
+                        <span class="project-tag">Portfolio</span>
+                        <h3>Portfolio Website</h3>
+                        <p>Personal portfolio showcasing skills, projects, and education.</p>
+                        <a href="https://port-work2.surge.sh/" target="_blank" rel="noopener noreferrer" class="project-demo-btn">View Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </article>
+
+                <article class="project-row" data-aos="fade-up">
+                    <div class="project-media">
+                        <img src="./Screenshot 2025-12-01 150225.png" alt="A Store Page">
+                    </div>
+                    <div class="project-copy">
+                        <span class="project-tag">Storefront</span>
+                        <h3>A Store Page</h3>
+                        <p>Product catalog storefront for browsing items offered by the store.</p>
+                        <a href="https://sunflower-essentials.surge.sh/" target="_blank" rel="noopener noreferrer" class="project-demo-btn">View Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </article>
+            </div>
         </div>
     </section>
 
     <section class="experience" id="experience">
+        <div class="section-shape section-shape--experience" aria-hidden="true"></div>
         <div class="container">
-            <h2 class="section-title">Work Experience</h2>
-            <p class="section-subtitle">Projects & Collaborations I’ve worked on</p>
+            <div class="section-head" data-aos="fade-up">
+                <span class="eyebrow">Career</span>
+                <h2 class="section-title">Work Experience</h2>
+                <p class="section-subtitle">Projects & collaborations I’ve worked on</p>
+            </div>
 
-            <div class="exp-timeline">
-
-
-                <!-- Enamly -->
-                <div class="exp-item" data-aos="fade-right" data-aos-delay="200">
-                    <img src="Screenshot 2026-01-09 123019.png" alt="Enamly.ai Logo" class="exp-logo">
-                    <!-- Replace with actual logo/screenshot path -->
-                    <div class="exp-content">
-                        <h3>Enamly.ai - AI Receptionist Co-Pilot</h3>
-                        <p><strong>Role:</strong> Full-Stack Web Developer</p>
-                        <span class="exp-years">2025 - Present</span>
-                        <p class="exp-desc">
-                            Currently working on a cutting-edge AI platform for dental practices that automates patient
-                            communication by answering calls and texts 24/7, qualifying leads, and booking appointments
-                            automatically.
-
-                            Responsible for updating platform features, fixing bugs, improving system performance, and
-                            maintaining seamless integrations across services. Contributing to scalable, secure, and
-                            real-time solutions that help dental clinics improve patient engagement and operational
-                            efficiency.
-                        </p>
+            <div class="exp-track">
+                <article class="exp-step" data-aos="fade-up">
+                    <aside class="exp-date">2026 – Present</aside>
+                    <div class="exp-body">
+                        <div class="exp-icon-thumb"><i class="fa-solid fa-chart-line"></i></div>
+                        <div class="exp-content">
+                            <h3>CRM & Marketing Automation Specialist</h3>
+                            <p class="exp-role">Pacetas</p>
+                            <p class="exp-desc">At Pacetas, I build responsive websites, landing pages, webinar funnels, and automated business systems with GoHighLevel. CRM setup, forms, calendars, workflows, lead management, email automation, segmentation, and integrations, helping businesses capture leads and streamline operations.</p>
+                        </div>
                     </div>
-                </div>
-                <!-- Real Estate Dashboard -->
-                <div class="exp-item" data-aos="fade-right" data-aos-delay="200">
-                    <img src="./aim.png" alt="Fashion Designer & Tailor Site" class="exp-logo">
-                    <div class="exp-content">
-                        <h3>Fashion Designer & Tailor Platform</h3>
-                        <p><strong>Role:</strong> Frontend Developer</p>
-                        <span class="exp-years">2025</span>
-                        <p class="exp-desc">
-                            Developed a stylish platform where users can explore fashion styles, customize
-                            their preferences, and book tailoring services online. Focused on delivering
-                            a sleek user interface with smooth booking flow to connect designers with clients.
-                        </p>
-                    </div>
-                </div>
+                </article>
 
-                <div class="exp-item" data-aos="fade-right" data-aos-delay="200">
-                    <img src="./Screenshot 2025-12-01 152758.png" alt="Neststacx Website" class="exp-logo">
-                    <div class="exp-content">
-                        <h3>Neststacx Website</h3>
-                        <p><strong>Role:</strong> Frontend & Backend Developer</p>
-                        <span class="exp-years">2025</span>
-                        <p class="exp-desc">
-                            Developed the frontend and backend for Neststacx, an IT consulting and web solutions
-                            platform.
-                            Built a responsive, modern website that showcases services while enabling users to send
-                            reviews
-                            and messages directly to the admin. Collaborated with designers to ensure smooth navigation
-                            and a clean UI for an engaging user experience.
-                        </p>
+                <article class="exp-step" data-aos="fade-up">
+                    <aside class="exp-date">2025 – Present</aside>
+                    <div class="exp-body">
+                        <img src="Screenshot 2026-01-09 123019.png" alt="Enamly Logo" class="exp-thumb">
+                        <div class="exp-content">
+                            <h3>Enamly, Receptionist Co-Pilot Platform</h3>
+                            <p class="exp-role">Full-Stack Web Developer</p>
+                            <p class="exp-desc">Platform for dental practices that automates patient communication, qualifies leads, and books appointments 24/7. I update features, fix bugs, improve performance, and maintain integrations.</p>
+                        </div>
                     </div>
-                </div>
+                </article>
 
-                <!-- Freelance Portfolio Projects -->
-                <div class="exp-item" data-aos="fade-right" data-aos-delay="200">
-                    <img src="./Screenshot 2025-12-01 153026.png" alt="Poet Inspiration Site" class="exp-logo">
-                    <div class="exp-content">
-                        <h3>Poet Inspiration Platform</h3>
-                        <p><strong>Role:</strong> Frontend Developer</p>
-                        <span class="exp-years">2025</span>
-                        <p class="exp-desc">
-                            Built a platform for poets to receive daily inspiration, explore powerful quotes,
-                            and contribute their own creations. The site focused on simplicity, creativity,
-                            and a community-driven experience to encourage writers to express themselves.
-                        </p>
+                <article class="exp-step" data-aos="fade-up">
+                    <aside class="exp-date">2025</aside>
+                    <div class="exp-body">
+                        <img src="Screenshot 2026-04-22 123252.png" alt="DevNest" class="exp-thumb">
+                        <div class="exp-content">
+                            <h3>DevNest, E-Learning Platform</h3>
+                            <p class="exp-role">Full-Stack Developer</p>
+                            <p class="exp-desc">Learning platform with Paystack payments, subscription-gated lessons, and progress analytics. React + Vite on Vercel, Node.js + Express + MongoDB on Render.</p>
+                        </div>
                     </div>
-                </div>
+                </article>
 
-                <div class="exp-item" data-aos="fade-right" data-aos-delay="200">
-                    <img src="./trade-signal-preview.png" alt="Trade Signal Landing Page" class="exp-logo">
-                    <div class="exp-content">
-                        <h3>Trade Signal Landing Page</h3>
-                        <p><strong>Role:</strong> Frontend Developer</p>
-                        <span class="exp-years">2025</span>
-                        <p class="exp-desc">
-                            Built a modern, high-conversion landing page for a trading signal service.
-                            The page displays real-time or regularly updated trading signals and includes a clear
-                            call-to-action
-                            that routes users directly to the Telegram channel for premium signals.
-                            Designed with a clean UI, fast performance, and mobile responsiveness to ensure smooth user
-                            experience
-                            and maximum engagement.
-                        </p>
+                <article class="exp-step" data-aos="fade-up">
+                    <aside class="exp-date">2025</aside>
+                    <div class="exp-body">
+                        <img src="./Screenshot 2025-12-01 152758.png" alt="Neststacx Website" class="exp-thumb">
+                        <div class="exp-content">
+                            <h3>Neststacx Website</h3>
+                            <p class="exp-role">Frontend & Backend Developer</p>
+                            <p class="exp-desc">IT consulting platform with responsive UI, service showcase, and admin messaging for reviews and contact.</p>
+                        </div>
                     </div>
-                </div>
+                </article>
 
-                <!-- DevNest Project -->
-                <div class="exp-item" data-aos="fade-right" data-aos-delay="200">
-                    <img src="Screenshot 2026-04-22 123252.png" alt="DevNest E-Learning Platform" class="exp-logo">
-                    <div class="exp-content">
-                        <h3>DevNest - Full-Stack E-Learning Platform</h3>
-                        <p><strong>Role:</strong> Full-Stack Developer</p>
-                        <span class="exp-years">2025</span>
-                        <p class="exp-desc">
-                            Architected and deployed a modern learning platform with secure paid access control and
-                            progress tracking.
-                            Implemented role-based authentication, subscription-gated lessons using Paystack payment
-                            integration,
-                            and real-time progress analytics. Frontend deployed on Vercel (React + Vite), backend on
-                            Render
-                            (Node.js + Express + MongoDB) with production-safe routing and payment verification flow.
-                        </p>
+                <article class="exp-step" data-aos="fade-up">
+                    <aside class="exp-date">2025</aside>
+                    <div class="exp-body">
+                        <img src="./aim.png" alt="Fashion Platform" class="exp-thumb">
+                        <div class="exp-content">
+                            <h3>Fashion Designer & Tailor Platform</h3>
+                            <p class="exp-role">Frontend Developer</p>
+                            <p class="exp-desc">Stylish booking platform for exploring fashion styles and tailoring services with a smooth client-designer flow.</p>
+                        </div>
                     </div>
-                </div>
+                </article>
+
+                <article class="exp-step" data-aos="fade-up">
+                    <aside class="exp-date">2025</aside>
+                    <div class="exp-body">
+                        <img src="./Screenshot 2025-12-01 153026.png" alt="Poet Inspiration Site" class="exp-thumb">
+                        <div class="exp-content">
+                            <h3>Poet Inspiration Platform</h3>
+                            <p class="exp-role">Frontend Developer</p>
+                            <p class="exp-desc">Community platform for daily inspiration, quotes, and user-submitted poetry with a creative, minimal UI.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="exp-step" data-aos="fade-up">
+                    <aside class="exp-date">2025</aside>
+                    <div class="exp-body">
+                        <img src="./trade-signal-preview.png" alt="Trade Signal Landing Page" class="exp-thumb">
+                        <div class="exp-content">
+                            <h3>Trade Signal Landing Page</h3>
+                            <p class="exp-role">Frontend Developer</p>
+                            <p class="exp-desc">High-conversion landing page for trading signals with Telegram CTA, mobile-first layout, and fast performance.</p>
+                        </div>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
 
 
     <section class="contact" id="contact">
+        <div class="section-shape section-shape--contact" aria-hidden="true"></div>
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
-            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="150">
-                Let’s work together or just say hello 👋
-            </p>
+            <div class="section-head" data-aos="fade-up">
+                <span class="eyebrow">Contact</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let’s work together or just say hello 👋</p>
+            </div>
 
-            <!-- Contact Form -->
-            <div class="contact-side">
-                <form class="contact-form" action="https://formspree.io/f/meolzlwk" method="POST" data-aos="fade-left"
-                    data-aos-delay="100">
+            <div class="contact-layout" data-aos="fade-up">
+                <div class="contact-info-panel">
+                    <div class="contact-info">
+                        <h4>Email</h4>
+                        <p><a href="mailto:ugonnaaninwodo@gmail.com">ugonnaaninwodo@gmail.com</a></p>
+                    </div>
+                    <div class="contact-info">
+                        <h4>Phone</h4>
+                        <p>+234 916 873 6860</p>
+                    </div>
+                    <div class="contact-info">
+                        <h4>Location</h4>
+                        <p>Nigeria</p>
+                    </div>
+                    <hr class="contact-divider">
+                    <h4 class="contact-connect-title">Connect</h4>
+                    <div class="links">
+                        <a href=""><span>Discord</span><span>steven.tech</span></a>
+                        <a href="" class="tiktok"><span>TikTok</span><span>https://www.tiktok.com/@mr.roto6</span></a>
+                        <a href="https://www.linkedin.com/in/ugonna-paul-240757402/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><span>ugonna-paul-240757402</span></a>
+                        <a href="https://x.com/Roto_TechHub" target="_blank" rel="noopener noreferrer"><span>X</span><span>@Roto_TechHub</span></a>
+                    </div>
+                    <div class="social-links">
+                        <a href="mailto:ugonnaaninwodo@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://github.com/ugonna17-paul"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form" action="https://formspree.io/f/meolzlwk" method="POST">
                     <input type="text" name="name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
                     <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
                     <button type="submit" class="btn">Send Message</button>
                 </form>
-
-
-
-                <div class="contact-cards">
-                    <div class="contact-area" data-aos="fade-right" data-aos-delay="100">
-                        <h4 class="contact-area-h4">Contact Information</h4>
-                        <div class="contact-info">
-                            <h4>Email</h4>
-                            <p>ugonnaaninwodo@gmail.com</p>
-                        </div>
-
-                        <div class="contact-info">
-                            <h4>Phone</h4>
-                            <p>+234 916 873 6860</p>
-                        </div>
-
-                        <div class="contact-info">
-                            <h4>Location</h4>
-                            <p>Nigeria</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-link" data-aos="fade-up" data-aos-delay="100">
-                        <h4 class="contact-area-h4">Connect</h4>
-                        <div class="links">
-                            <a href="">
-                                <span>Discord</span>
-                                <span>steven.tech</span>
-                            </a>
-                            <a href="" class="tiktok">
-                                <span>TikTok</span>
-                                <span
-                                    style="word-wrap: break-word; overflow-wrap: break-word; white-space: normal;">https://www.tiktok.com/@mr.roto6</span>
-                            </a>
-                            <a href="">
-                                <span>Twitter</span>
-                                <span>@RotoTechHub</span>
-                            </a>
-                        </div>
-
-                    </div>
-
-                </div>
             </div>
-            <div class="social-links" data-aos="fade-up" data-aos-delay="450">
-                <a href="mailto:ugonnaaninwodo@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-            </div>
-
         </div>
-
-
     </section>
 
     <footer class="footer">
         <div class="footer-container">
             <!-- Brand -->
-            <h2 class="brand" data-aos="fade-up">Ugonna Aninwodo</h2>
-            <p class="tagline" data-aos="fade-up" data-aos-delay="100">
-                Web Developer | Frontend Enthusiast
+            <h2 class="brand">Ugonna Aninwodo</h2>
+            <p class="tagline">
+                Web Developer | CRM & Automation Specialist
             </p>
 
             <!-- Links -->
-            <ul class="footer-links" data-aos="fade-up" data-aos-delay="200">
+            <ul class="footer-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#automation">Automation</a></li>
                 <li><a href="#project">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
 
             <!-- Social Icons -->
-            <div class="social-icons" data-aos="zoom-in" data-aos-delay="100">
-                <a href="https://github.com/ugonna17-paul"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
+            <div class="social-icons">
+                <a href="https://github.com/ugonna17-paul" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ugonna-paul-240757402/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/Roto_TechHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-x-twitter"></i></a>
             </div>
 
             <!-- Copyright -->
-            <p class="copyright" data-aos="fade-up" data-aos-delay="400">
+            <p class="copyright">
                 © 2025 Ugonna Aninwodo. All Rights Reserved.
             </p>
         </div>
     </footer>
 
+    <div class="connect-modal" id="connectModal" aria-hidden="true" role="dialog" aria-labelledby="connectModalTitle" aria-modal="true">
+        <div class="connect-modal-backdrop" id="connectBackdrop"></div>
+        <div class="connect-modal-dialog">
+            <div class="connect-modal-content">
+                <div class="connect-modal-header" id="connectModalHeader">
+                    <div>
+                        <span class="connect-modal-eyebrow">Start a project</span>
+                        <h3 id="connectModalTitle">Get in touch</h3>
+                        <p class="connect-modal-note">Tell me about your business and what you’re looking to build. I’ll respond within 24–48 hours.</p>
+                    </div>
+                    <button type="button" class="connect-close" id="connectClose" aria-label="Close form">&times;</button>
+                </div>
+                <div id="connectFormWrap">
+                <form class="connect-form" id="connectForm" action="https://formspree.io/f/meolzlwk" method="POST">
+                    <input type="hidden" name="_subject" value="New portfolio inquiry">
+                    <div class="connect-field">
+                        <label for="connectName">Full name</label>
+                        <input type="text" id="connectName" name="name" placeholder="John Smith" required>
+                    </div>
+                    <div class="connect-field-row">
+                        <div class="connect-field">
+                            <label for="connectEmail">Email address</label>
+                            <input type="email" id="connectEmail" name="email" placeholder="you@company.com" required>
+                        </div>
+                        <div class="connect-field">
+                            <label for="connectPhone">Phone <span class="connect-optional">(optional)</span></label>
+                            <input type="tel" id="connectPhone" name="phone" placeholder="+234 ...">
+                        </div>
+                    </div>
+                    <div class="connect-field">
+                        <label for="connectService">Project type</label>
+                        <select id="connectService" name="service" required>
+                            <option value="" disabled selected>Select a category</option>
+                            <option value="Business / Corporate Website">Business / Corporate Website</option>
+                            <option value="Web Application">Web Application</option>
+                            <option value="E-Commerce">E-Commerce</option>
+                            <option value="Travel & Tourism">Travel & Tourism</option>
+                            <option value="Hotel & Hospitality">Hotel & Hospitality</option>
+                            <option value="Restaurant & Food Service">Restaurant & Food Service</option>
+                            <option value="Real Estate">Real Estate</option>
+                            <option value="Portfolio / Personal Brand">Portfolio / Personal Brand</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="connect-field">
+                        <label for="connectMessage">Project details</label>
+                        <textarea id="connectMessage" name="message" placeholder="Briefly describe your goals, features needed, and preferred timeline..." rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="connect-submit" id="connectSubmitBtn">Send inquiry</button>
+                    <p class="connect-status" id="connectStatus" role="status" aria-live="polite"></p>
+                </form>
+                </div>
+                <div class="connect-success" id="connectSuccess" hidden>
+                    <div class="connect-check-wrap" aria-hidden="true">
+                        <svg class="connect-check-svg" viewBox="0 0 52 52">
+                            <circle class="connect-check-circle" cx="26" cy="26" r="25" fill="none"/>
+                            <path class="connect-check-mark" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                        </svg>
+                    </div>
+                    <h4 class="connect-success-title">Message sent successfully</h4>
+                    <p class="connect-success-text">Your inquiry has been verified and delivered. Thank you for reaching out, I’ll get back to you within 24–48 hours.</p>
+                    <button type="button" class="connect-submit" id="connectDoneBtn">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 600,
+            once: true,
+            offset: 50,
+            easing: 'ease-out',
+            disable: window.matchMedia('(prefers-reduced-motion: reduce)').matches
+        });
+
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-links li a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        const tabBtns = document.querySelectorAll(".tab-btn");
+        const tabContents = document.querySelectorAll(".skills-container");
+
+        tabBtns.forEach(btn => {
+            btn.addEventListener("click", () => {
+                tabBtns.forEach(b => b.classList.remove("active"));
+                btn.classList.add("active");
+
+                tabContents.forEach(tab => {
+                    tab.classList.remove("active");
+                });
+                document.getElementById(btn.dataset.tab).classList.add("active");
+                AOS.refresh();
+            });
+        });
+
+        const connectBtn = document.getElementById("connectBtn");
+        const connectModal = document.getElementById("connectModal");
+        const connectBackdrop = document.getElementById("connectBackdrop");
+        const connectClose = document.getElementById("connectClose");
+        const connectForm = document.getElementById("connectForm");
+        const connectFormWrap = document.getElementById("connectFormWrap");
+        const connectModalHeader = document.getElementById("connectModalHeader");
+        const connectSuccess = document.getElementById("connectSuccess");
+        const connectDoneBtn = document.getElementById("connectDoneBtn");
+        const connectStatus = document.getElementById("connectStatus");
+
+        function resetConnectModal() {
+            connectFormWrap.hidden = false;
+            connectModalHeader.hidden = false;
+            connectSuccess.hidden = true;
+            connectSuccess.classList.remove("is-visible");
+            connectForm.reset();
+            connectStatus.textContent = "";
+            connectStatus.className = "connect-status";
+            document.getElementById("connectSubmitBtn").disabled = false;
+        }
+
+        function showConnectSuccess() {
+            connectFormWrap.hidden = true;
+            connectModalHeader.hidden = true;
+            connectSuccess.hidden = false;
+            requestAnimationFrame(() => {
+                connectSuccess.classList.add("is-visible");
+            });
+        }
+
+        function openConnectForm() {
+            resetConnectModal();
+            connectModal.classList.add("is-open");
+            connectModal.setAttribute("aria-hidden", "false");
+            document.body.classList.add("modal-open");
+            connectForm.querySelector("#connectName").focus();
+        }
+
+        function closeConnectForm() {
+            connectModal.classList.remove("is-open");
+            connectModal.setAttribute("aria-hidden", "true");
+            document.body.classList.remove("modal-open");
+            setTimeout(resetConnectModal, 300);
+        }
+
+        connectBtn.addEventListener("click", openConnectForm);
+        connectClose.addEventListener("click", closeConnectForm);
+        connectDoneBtn.addEventListener("click", closeConnectForm);
+        connectBackdrop.addEventListener("click", closeConnectForm);
+
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape" && connectModal.classList.contains("is-open")) {
+                closeConnectForm();
+            }
+        });
+
+        connectForm.addEventListener("submit", async (event) => {
+            event.preventDefault();
+            const submitBtn = connectForm.querySelector(".connect-submit");
+            submitBtn.disabled = true;
+            connectStatus.textContent = "Sending...";
+            connectStatus.className = "connect-status";
+
+            try {
+                const response = await fetch(connectForm.action, {
+                    method: "POST",
+                    body: new FormData(connectForm),
+                    headers: { Accept: "application/json" }
+                });
+
+                if (response.ok) {
+                    showConnectSuccess();
+                } else {
+                    connectStatus.textContent = "Something went wrong. Please try again or email me directly.";
+                    connectStatus.classList.add("is-error");
+                }
+            } catch (error) {
+                connectStatus.textContent = "Network error. Please try again or email me directly.";
+                connectStatus.classList.add("is-error");
+            }
+
+            submitBtn.disabled = false;
+        });
+    </script>
 
 </body>
 
 </html>
-<script>
-    AOS.init({
-        duration: 1200,  // smooth animation speed
-        once: true       // animates only once
-    });
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
-
-    // Toggle active class on click
-    hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-    });
-
-    // Optional: close nav when a link is clicked (mobile)
-    document.querySelectorAll('.nav-links li a').forEach(link => {
-        link.addEventListener('click', () => {
-            navLinks.classList.remove('active');
-        });
-    });
-    // JavaScript for Changing Text
-    const tabBtns = document.querySelectorAll(".tab-btn");
-    const tabContents = document.querySelectorAll(".skills-container");
-
-    tabBtns.forEach(btn => {
-        btn.addEventListener("click", () => {
-            tabBtns.forEach(b => b.classList.remove("active"));
-            btn.classList.add("active");
-
-            tabContents.forEach(tab => {
-                tab.classList.remove("active");
-            });
-            document.getElementById(btn.dataset.tab).classList.add("active");
-        });
-    });
-
-
-
-
-</script>
