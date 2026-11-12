@@ -1349,6 +1349,14 @@ body.modal-open {
     line-height: 1.65;
 }
 
+.exp-tech {
+    margin-top: 10px;
+    font-size: 0.82rem;
+    color: var(--green-dark);
+    line-height: 1.55;
+    font-weight: 600;
+}
+
 
 .contact {
     padding: 100px 0 80px;
